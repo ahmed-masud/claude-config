@@ -1,0 +1,180 @@
+#!/usr/bin/env bash
+# claude-cli — Manage Claude config, conversations, and profiles from anywhere
+# Install: Add to PATH or symlink to ~/bin/claude-cli
+#
+# Usage:
+#   claude-cli save "title" ["summary"]   Save a conversation summary
+#   claude-cli switch <profile>           Switch active profile
+#   claude-cli sync ["message"]           Commit & push changes
+#   claude-cli status                     Show current state
+#   claude-cli log [n]                    Show recent conversations
+#   claude-cli edit                       Open config in $EDITOR
+#   claude-cli path                       Print repo root path
+#   claude-cli help                       Show this help
+
+set -euo pipefail
+
+# --- locate repo root ---
+# Check env override first, then default location
+CLAUDE_CONFIG_ROOT="${CLAUDE_CONFIG_ROOT:-$HOME/projects/ahmed-masud/claude-config}"
+
+if [[ ! -d "$CLAUDE_CONFIG_ROOT/.git" ]]; then
+    echo "error: claude-config repo not found at $CLAUDE_CONFIG_ROOT" >&2
+    echo "       set CLAUDE_CONFIG_ROOT to your repo location" >&2
+    exit 1
+fi
+
+# --- helpers ---
+info()    { echo "→ $*"; }
+warn()    { echo "⚠ $*" >&2; }
+die()     { echo "✗ $*" >&2; exit 1; }
+timestamp() { date -u +%Y-%m-%dT%H:%M:%SZ; }
+today()   { date -u +%Y-%m-%d; }
+
+slugify() {
+    echo "$1" | tr '[:upper:]' '[:lower:]' | tr ' ' '-' | tr -cd 'a-z0-9-' | head -c 60
+}
+
+# --- commands ---
+
+cmd_save() {
+    local title="${1:?usage: claude-cli save \"title\" [\"summary\"]}"
+    local slug="$(slugify "$title")"
+    local filename="$(today)-${slug}.md"
+    local filepath="$CLAUDE_CONFIG_ROOT/conversations/active/$filename"
+    local source="${CLAUDE_CLI_SOURCE:-manual}"
+
+    # Body from arg, stdin, or prompt
+    local body=""
+    if [[ $# -ge 2 ]]; then
+        body="$2"
+    elif [[ ! -t 0 ]]; then
+        body="$(cat)"
+    else
+        echo "Enter conversation summary (Ctrl-D to finish):"
+        body="$(cat)"
+    fi
+
+    cat > "$filepath" <<EOF
+# ${title}
+
+- **Date:** $(today)
+- **Saved:** $(timestamp)
+- **Source:** ${source}
+
+---
+
+${body}
+EOF
+
+    info "saved: $filepath"
+
+    # Auto-commit and push
+    cd "$CLAUDE_CONFIG_ROOT"
+    git add "$filepath"
+    git commit -m "convo: ${title} [$(today)]" --quiet 2>/dev/null || true
+    if git remote get-url origin >/dev/null 2>&1; then
+        git push --quiet 2>/dev/null && info "pushed" || warn "push failed (offline?)"
+    fi
+}
+
+cmd_switch() {
+    local profile="${1:?usage: claude-cli switch <profile>}"
+    "$CLAUDE_CONFIG_ROOT/scripts/switch-profile.sh" "$profile"
+}
+
+cmd_sync() {
+    local msg="${1:-sync $(timestamp)}"
+    cd "$CLAUDE_CONFIG_ROOT"
+    git add -A
+    if git diff --cached --quiet; then
+        info "nothing to commit"
+        return
+    fi
+    git commit -m "$msg [$(timestamp)]" --quiet
+    git push --quiet 2>/dev/null && info "synced" || warn "push failed"
+}
+
+cmd_status() {
+    cd "$CLAUDE_CONFIG_ROOT"
+
+    local profile="$(readlink system/profiles/default 2>/dev/null || echo 'none')"
+    echo "Profile:  $profile"
+    echo "Repo:     $CLAUDE_CONFIG_ROOT"
+    echo ""
+
+    local active_count="$(find conversations/active -name '*.md' 2>/dev/null | wc -l | tr -d ' ')"
+    local archive_count="$(find conversations/archive -name '*.md' 2>/dev/null | wc -l | tr -d ' ')"
+    echo "Conversations:  $active_count active, $archive_count archived"
+    echo ""
+
+    echo "Git:"
+    git status --short | head -10
+    local unpushed="$(git log origin/main..HEAD --oneline 2>/dev/null | wc -l | tr -d ' ')"
+    [[ "$unpushed" -gt 0 ]] && echo "  $unpushed unpushed commit(s)"
+    echo ""
+
+    echo "Last 3 commits:"
+    git log --oneline -3
+}
+
+cmd_log() {
+    local n="${1:-5}"
+    cd "$CLAUDE_CONFIG_ROOT"
+    echo "=== Recent Conversations ==="
+    echo ""
+    find conversations/active -name '*.md' -type f | sort -r | head -n "$n" | while read -r f; do
+        local title="$(head -1 "$f" | sed 's/^# //')"
+        local date="$(basename "$f" | cut -d- -f1-3)"
+        printf "  %s  %s\n" "$date" "$title"
+    done
+}
+
+cmd_edit() {
+    "${EDITOR:-vim}" "$CLAUDE_CONFIG_ROOT"
+}
+
+cmd_path() {
+    echo "$CLAUDE_CONFIG_ROOT"
+}
+
+cmd_help() {
+    cat <<'EOF'
+claude-cli — Manage Claude config, conversations, and profiles
+
+Commands:
+  save "title" ["summary"]   Save a conversation summary
+  switch <profile>           Switch active profile
+  sync ["message"]           Commit & push changes
+  status                     Show current state
+  log [n]                    Show recent conversations (default: 5)
+  edit                       Open config in $EDITOR
+  path                       Print repo root path
+  help                       Show this help
+
+Environment:
+  CLAUDE_CONFIG_ROOT         Override repo location (default: ~/projects/ahmed-masud/claude-config)
+  CLAUDE_CLI_SOURCE          Tag conversation source (e.g., "claude-code", "web")
+  EDITOR                     Editor for 'edit' command
+
+Examples:
+  claude-cli save "debugging resiliate crate" "Fixed lifetime issue in SoDAC module"
+  echo "long summary..." | claude-cli save "architecture review"
+  claude-cli switch izza
+  claude-cli sync "updated memory"
+  claude-cli log 10
+EOF
+}
+
+# --- dispatch ---
+case "${1:-help}" in
+    save)    shift; cmd_save "$@" ;;
+    switch)  shift; cmd_switch "$@" ;;
+    sync)    shift; cmd_sync "$@" ;;
+    status)  cmd_status ;;
+    log)     shift; cmd_log "$@" ;;
+    edit)    cmd_edit ;;
+    path)    cmd_path ;;
+    help|-h|--help) cmd_help ;;
+    *)       die "unknown command: $1 (try 'claude-cli help')" ;;
+esac
