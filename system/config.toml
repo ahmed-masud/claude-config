@@ -1,0 +1,27 @@
+# claude system configuration
+# ahmed-masud/claude
+
+[repo]
+version = "0.1.0"
+created = "2026-03-09"
+
+[profiles]
+# Active profile is determined by the system/profiles/default symlink
+# Available: ahmed, izza
+default = "ahmed"
+
+[sync]
+# Auto-commit on profile switch
+auto_commit = true
+# Include timestamps in commit messages
+timestamped_commits = true
+
+[conversations]
+# Days before active conversations move to archive
+archive_after_days = 30
+# Format for conversation exports
+export_format = "md"  # md | json
+
+[memory]
+# Snapshot memory edits on sync
+snapshot_on_sync = true
