@@ -1,25 +1,28 @@
-# claude
+# claude-config
 
-Personal Claude configuration, memory, and conversation management.
+Shared Claude configuration, memory, and conversation management.
+
+> Ahmed's personal profile is kept in a separate private repo: [ahmed-masud/claude-personal](https://github.com/ahmed-masud/claude-personal)
 
 ## Structure
 
 ```
-claude/
-├── system/          # Profiles & system config
-│   ├── profiles/    # Per-user Claude preference profiles
-│   │   ├── ahmed/   # Ahmed's profile
-│   │   ├── izza/    # Izza's profile
-│   │   └── default  # → symlink to active profile
-│   └── config.toml  # Repo-level configuration
-├── memory/          # Claude memory edits & Distilligent context
-│   ├── edits.md     # Claude memory system edits
-│   └── context/     # Distilligent context snapshots
-├── conversations/   # Conversation data
-│   ├── active/      # Current/ongoing conversations
-│   └── archive/     # Completed conversations
-├── settings/        # Claude.ai exported settings
-└── scripts/         # Utility scripts
+claude-config/
+├── system/                  # Profiles & system config
+│   ├── profiles/
+│   │   ├── izza/            # Izza's profile
+│   │   └── default          # → symlink to active profile
+│   └── config.toml          # Repo-level configuration
+├── memory/                  # Claude memory & Distilligent context
+│   ├── README.md
+│   └── context/             # Distilligent context snapshots
+├── conversations/           # Conversation data
+│   ├── active/
+│   └── archive/
+├── settings/                # Claude.ai exported settings
+└── scripts/                 # Utility scripts
+    ├── switch-profile.sh
+    └── sync.sh
 ```
 
 ## Profile Switching
