@@ -16,7 +16,7 @@ Ahmed is Izza Masud's older brother. He is the **first external user** of Distil
 - **Health considerations:** CKD (kidney disease), heart condition, sleep apnea (uses CPAP), ADHD
 - Tends to eat at night
 - His sister Izza cares for him when he visits, along with their mother who is recovering
-- Two daughters: Ava (11) and Laila (9), currently in the US
+- Two daughters: Ava (9) and Laila (11), currently in the US
 
 ### The Siblings
 
