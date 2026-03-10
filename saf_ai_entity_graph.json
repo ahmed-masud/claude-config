@@ -1,0 +1,1182 @@
+{
+  "weight_scale": {
+    "core": 1.0,
+    "important": 0.85,
+    "supporting": 0.6,
+    "tentative": 0.35
+  },
+  "entities": [
+    {
+      "id": "ahmed_masud",
+      "label": "Ahmed Masud",
+      "type": "person"
+    },
+    {
+      "id": "denis_krusos",
+      "label": "Denis Krusos",
+      "type": "person"
+    },
+    {
+      "id": "peri_krusos",
+      "label": "Peri Krusos",
+      "type": "person"
+    },
+    {
+      "id": "david",
+      "label": "David",
+      "type": "person"
+    },
+    {
+      "id": "ling",
+      "label": "Ling",
+      "type": "person"
+    },
+    {
+      "id": "jeffrey_salomon",
+      "label": "Jeffrey Salomon",
+      "type": "person"
+    },
+    {
+      "id": "cynthia",
+      "label": "Cynthia",
+      "type": "person"
+    },
+    {
+      "id": "investors",
+      "label": "Investors",
+      "type": "actor_group"
+    },
+    {
+      "id": "saf_ai",
+      "label": "saf.ai, Inc.",
+      "type": "company"
+    },
+    {
+      "id": "resiliate",
+      "label": "Resiliate",
+      "type": "platform"
+    },
+    {
+      "id": "aifs",
+      "label": "AiFS",
+      "type": "technology"
+    },
+    {
+      "id": "aikv",
+      "label": "AiKV",
+      "type": "technology"
+    },
+    {
+      "id": "cellfs",
+      "label": "CellFS",
+      "type": "filesystem"
+    },
+    {
+      "id": "cybernetic_engram",
+      "label": "Cybernetic Engram Engine",
+      "type": "engine"
+    },
+    {
+      "id": "control_plane",
+      "label": "Control Plane",
+      "type": "system"
+    },
+    {
+      "id": "control_plane_ui",
+      "label": "Control Plane UI",
+      "type": "interface"
+    },
+    {
+      "id": "plugin_architecture",
+      "label": "Plugin Architecture",
+      "type": "architecture"
+    },
+    {
+      "id": "nilfs2",
+      "label": "NILFS2",
+      "type": "filesystem"
+    },
+    {
+      "id": "fuse_driver",
+      "label": "FUSE Driver",
+      "type": "component"
+    },
+    {
+      "id": "dkms_kernel_module",
+      "label": "DKMS Kernel Module",
+      "type": "component"
+    },
+    {
+      "id": "technology_roadmap",
+      "label": "Technology Roadmap",
+      "type": "strategy"
+    },
+    {
+      "id": "product_direction",
+      "label": "Product Direction",
+      "type": "strategy"
+    },
+    {
+      "id": "technical_direction",
+      "label": "Technical Direction",
+      "type": "strategy"
+    },
+    {
+      "id": "ip_strategy",
+      "label": "IP Strategy",
+      "type": "strategy"
+    },
+    {
+      "id": "deep_system_knowledge",
+      "label": "Deep System Knowledge",
+      "type": "knowledge_asset"
+    },
+    {
+      "id": "technical_continuity",
+      "label": "Technical Continuity",
+      "type": "operational_asset"
+    },
+    {
+      "id": "safe_financing",
+      "label": "SAFE Financing",
+      "type": "financial_instrument"
+    },
+    {
+      "id": "cap_table",
+      "label": "Cap Table",
+      "type": "financial_structure"
+    },
+    {
+      "id": "future_priced_round",
+      "label": "Future Priced Round",
+      "type": "financing_event"
+    },
+    {
+      "id": "shareholder_structure",
+      "label": "Shareholder Structure",
+      "type": "financial_structure"
+    },
+    {
+      "id": "founder_stake",
+      "label": "Founder Stake",
+      "type": "equity_interest"
+    },
+    {
+      "id": "investor_interests",
+      "label": "Investor Interests",
+      "type": "equity_interest"
+    },
+    {
+      "id": "safe_conversion",
+      "label": "SAFE Conversion",
+      "type": "financing_event"
+    },
+    {
+      "id": "valuation_growth",
+      "label": "Valuation Growth",
+      "type": "financial_goal"
+    },
+    {
+      "id": "liquidity_event",
+      "label": "Liquidity Event",
+      "type": "corporate_event"
+    },
+    {
+      "id": "financing_strategy",
+      "label": "Financing Strategy",
+      "type": "strategy"
+    },
+    {
+      "id": "exit_timing",
+      "label": "Exit Timing",
+      "type": "strategy"
+    },
+    {
+      "id": "patent_portfolio",
+      "label": "Patent Portfolio",
+      "type": "ip_asset"
+    },
+    {
+      "id": "us12045224b2",
+      "label": "US12045224B2",
+      "type": "patent"
+    },
+    {
+      "id": "canadian_patent_application",
+      "label": "Canadian Patent Application",
+      "type": "patent_application"
+    },
+    {
+      "id": "european_patent_application",
+      "label": "European Patent Application",
+      "type": "patent_application"
+    },
+    {
+      "id": "japanese_patent_rights",
+      "label": "Japanese Patent Rights",
+      "type": "patent_rights"
+    },
+    {
+      "id": "marbury_law_group",
+      "label": "Marbury Law Group LLC",
+      "type": "organization"
+    },
+    {
+      "id": "patent_prosecution",
+      "label": "Patent Prosecution",
+      "type": "legal_process"
+    },
+    {
+      "id": "maintenance_fee_communications",
+      "label": "Maintenance Fee Communications",
+      "type": "legal_process"
+    },
+    {
+      "id": "cipo",
+      "label": "CIPO",
+      "type": "organization"
+    },
+    {
+      "id": "strategic_acquisition_narrative",
+      "label": "Strategic Acquisition Narrative",
+      "type": "strategy"
+    },
+    {
+      "id": "competitive_defensibility",
+      "label": "Competitive Defensibility",
+      "type": "strategic_asset"
+    },
+    {
+      "id": "investor_positioning",
+      "label": "Investor Positioning",
+      "type": "strategy"
+    },
+    {
+      "id": "gcp",
+      "label": "Google Cloud",
+      "type": "platform"
+    },
+    {
+      "id": "development_environments",
+      "label": "Development Environments",
+      "type": "infrastructure"
+    },
+    {
+      "id": "kernel_modules",
+      "label": "Kernel Modules",
+      "type": "component_group"
+    },
+    {
+      "id": "filesystem_logic",
+      "label": "Filesystem Logic",
+      "type": "component_group"
+    },
+    {
+      "id": "defense_sector",
+      "label": "Defense Sector",
+      "type": "market"
+    },
+    {
+      "id": "oil_and_gas_sector",
+      "label": "Oil and Gas Sector",
+      "type": "market"
+    },
+    {
+      "id": "dod",
+      "label": "DoD",
+      "type": "organization"
+    },
+    {
+      "id": "enterprise_prospects",
+      "label": "Enterprise Prospects",
+      "type": "market_group"
+    },
+    {
+      "id": "strategic_enterprise_partnering",
+      "label": "Strategic Enterprise Partnering",
+      "type": "strategy"
+    },
+    {
+      "id": "ibm",
+      "label": "IBM",
+      "type": "organization"
+    },
+    {
+      "id": "strategic_acquisition",
+      "label": "Strategic Acquisition",
+      "type": "corporate_event"
+    },
+    {
+      "id": "technology_tuckin",
+      "label": "Technology Tuck-In Acquisition",
+      "type": "corporate_event"
+    },
+    {
+      "id": "founder_knowledge",
+      "label": "Founder Knowledge",
+      "type": "knowledge_asset"
+    },
+    {
+      "id": "deep_technical_differentiation",
+      "label": "Deep Technical Differentiation",
+      "type": "strategic_asset"
+    },
+    {
+      "id": "ceo_role",
+      "label": "CEO Role",
+      "type": "role"
+    },
+    {
+      "id": "cto_role",
+      "label": "CTO Role",
+      "type": "role"
+    },
+    {
+      "id": "business_leadership",
+      "label": "Business Leadership",
+      "type": "role"
+    },
+    {
+      "id": "commercialization_and_operations",
+      "label": "Commercialization and Operations",
+      "type": "function"
+    },
+    {
+      "id": "company_operations",
+      "label": "Company Operations",
+      "type": "function"
+    },
+    {
+      "id": "enterprise_cyber_resilience",
+      "label": "Enterprise Cyber Resilience",
+      "type": "market_position"
+    },
+    {
+      "id": "cyber_resilience",
+      "label": "Cyber Resilience",
+      "type": "domain"
+    },
+    {
+      "id": "ransomware_mitigation",
+      "label": "Ransomware Mitigation",
+      "type": "domain"
+    },
+    {
+      "id": "deep_auditing",
+      "label": "Deep Auditing",
+      "type": "capability"
+    },
+    {
+      "id": "snapshot_recovery",
+      "label": "Snapshot Recovery",
+      "type": "capability"
+    },
+    {
+      "id": "unified_data_protection",
+      "label": "Unified Data Protection",
+      "type": "capability"
+    },
+    {
+      "id": "intelligent_filesystem_layer",
+      "label": "Intelligent Filesystem Layer",
+      "type": "architecture"
+    },
+    {
+      "id": "recovery_oriented_storage_logic",
+      "label": "Recovery-Oriented Storage Logic",
+      "type": "capability"
+    },
+    {
+      "id": "continuous_snapshotting",
+      "label": "Continuous Snapshotting",
+      "type": "capability"
+    },
+    {
+      "id": "versioned_storage",
+      "label": "Versioned Storage",
+      "type": "capability"
+    },
+    {
+      "id": "filesystem_behavior",
+      "label": "Filesystem Behavior",
+      "type": "signal_domain"
+    },
+    {
+      "id": "behavioral_detection",
+      "label": "Behavioral Detection",
+      "type": "capability"
+    },
+    {
+      "id": "autonomous_recovery",
+      "label": "Autonomous Recovery",
+      "type": "capability"
+    },
+    {
+      "id": "malicious_activity_interpretation",
+      "label": "Malicious Activity Interpretation",
+      "type": "capability"
+    },
+    {
+      "id": "operational_interface",
+      "label": "Operational Interface",
+      "type": "interface"
+    },
+    {
+      "id": "extensibility",
+      "label": "Extensibility",
+      "type": "architecture_property"
+    },
+    {
+      "id": "multi_filesystem_support",
+      "label": "Multi-Filesystem Support",
+      "type": "capability"
+    },
+    {
+      "id": "testing_interest",
+      "label": "Testing / Evaluative Interest",
+      "type": "engagement"
+    },
+    {
+      "id": "core_engineering_decisions",
+      "label": "Core Engineering Decisions",
+      "type": "decision_domain"
+    }
+  ],
+  "relations": [
+    {
+      "from": "ahmed_masud",
+      "to": "saf_ai",
+      "relation": "founder_of",
+      "weight": 1.0,
+      "class": "core"
+    },
+    {
+      "from": "ahmed_masud",
+      "to": "resiliate",
+      "relation": "principal_architect_of",
+      "weight": 1.0,
+      "class": "core"
+    },
+    {
+      "from": "ahmed_masud",
+      "to": "aifs",
+      "relation": "architect_of",
+      "weight": 1.0,
+      "class": "core"
+    },
+    {
+      "from": "ahmed_masud",
+      "to": "cellfs",
+      "relation": "architect_of",
+      "weight": 0.95,
+      "class": "core"
+    },
+    {
+      "from": "ahmed_masud",
+      "to": "aikv",
+      "relation": "planned_architect_of",
+      "weight": 0.85,
+      "class": "important"
+    },
+    {
+      "from": "ahmed_masud",
+      "to": "cybernetic_engram",
+      "relation": "inventor_of",
+      "weight": 1.0,
+      "class": "core"
+    },
+    {
+      "from": "ahmed_masud",
+      "to": "technology_roadmap",
+      "relation": "drives",
+      "weight": 0.95,
+      "class": "core"
+    },
+    {
+      "from": "ahmed_masud",
+      "to": "deep_system_knowledge",
+      "relation": "holds",
+      "weight": 1.0,
+      "class": "core"
+    },
+    {
+      "from": "ahmed_masud",
+      "to": "product_direction",
+      "relation": "influences",
+      "weight": 0.95,
+      "class": "core"
+    },
+    {
+      "from": "ahmed_masud",
+      "to": "technical_continuity",
+      "relation": "central_to",
+      "weight": 1.0,
+      "class": "core"
+    },
+    {
+      "from": "saf_ai",
+      "to": "resiliate",
+      "relation": "develops",
+      "weight": 1.0,
+      "class": "core"
+    },
+    {
+      "from": "saf_ai",
+      "to": "patent_portfolio",
+      "relation": "owns_or_controls",
+      "weight": 0.95,
+      "class": "core"
+    },
+    {
+      "from": "saf_ai",
+      "to": "safe_financing",
+      "relation": "raises_capital_through",
+      "weight": 0.9,
+      "class": "important"
+    },
+    {
+      "from": "saf_ai",
+      "to": "cap_table",
+      "relation": "maintains",
+      "weight": 0.9,
+      "class": "important"
+    },
+    {
+      "from": "saf_ai",
+      "to": "strategic_enterprise_partnering",
+      "relation": "pursues",
+      "weight": 0.75,
+      "class": "important"
+    },
+    {
+      "from": "saf_ai",
+      "to": "technology_tuckin",
+      "relation": "may_pursue",
+      "weight": 0.55,
+      "class": "supporting"
+    },
+    {
+      "from": "saf_ai",
+      "to": "cyber_resilience",
+      "relation": "focuses_on",
+      "weight": 1.0,
+      "class": "core"
+    },
+    {
+      "from": "saf_ai",
+      "to": "ransomware_mitigation",
+      "relation": "focuses_on",
+      "weight": 0.95,
+      "class": "core"
+    },
+    {
+      "from": "resiliate",
+      "to": "aifs",
+      "relation": "includes",
+      "weight": 1.0,
+      "class": "core"
+    },
+    {
+      "from": "resiliate",
+      "to": "cellfs",
+      "relation": "includes",
+      "weight": 1.0,
+      "class": "core"
+    },
+    {
+      "from": "resiliate",
+      "to": "cybernetic_engram",
+      "relation": "includes",
+      "weight": 1.0,
+      "class": "core"
+    },
+    {
+      "from": "resiliate",
+      "to": "control_plane",
+      "relation": "includes",
+      "weight": 0.85,
+      "class": "important"
+    },
+    {
+      "from": "resiliate",
+      "to": "deep_auditing",
+      "relation": "supports",
+      "weight": 0.85,
+      "class": "important"
+    },
+    {
+      "from": "resiliate",
+      "to": "snapshot_recovery",
+      "relation": "supports",
+      "weight": 0.95,
+      "class": "core"
+    },
+    {
+      "from": "resiliate",
+      "to": "unified_data_protection",
+      "relation": "supports",
+      "weight": 0.9,
+      "class": "important"
+    },
+    {
+      "from": "resiliate",
+      "to": "enterprise_cyber_resilience",
+      "relation": "designed_for",
+      "weight": 0.95,
+      "class": "core"
+    },
+    {
+      "from": "aifs",
+      "to": "cellfs",
+      "relation": "integrates_with",
+      "weight": 0.9,
+      "class": "important"
+    },
+    {
+      "from": "aifs",
+      "to": "intelligent_filesystem_layer",
+      "relation": "participates_in",
+      "weight": 0.85,
+      "class": "important"
+    },
+    {
+      "from": "aifs",
+      "to": "recovery_oriented_storage_logic",
+      "relation": "supports",
+      "weight": 0.8,
+      "class": "important"
+    },
+    {
+      "from": "aikv",
+      "to": "resiliate",
+      "relation": "intended_to_integrate_with",
+      "weight": 0.8,
+      "class": "important"
+    },
+    {
+      "from": "cellfs",
+      "to": "nilfs2",
+      "relation": "derived_from",
+      "weight": 0.95,
+      "class": "core"
+    },
+    {
+      "from": "cellfs",
+      "to": "continuous_snapshotting",
+      "relation": "provides",
+      "weight": 0.95,
+      "class": "core"
+    },
+    {
+      "from": "cellfs",
+      "to": "versioned_storage",
+      "relation": "provides",
+      "weight": 0.95,
+      "class": "core"
+    },
+    {
+      "from": "cellfs",
+      "to": "dkms_kernel_module",
+      "relation": "interacts_with",
+      "weight": 0.8,
+      "class": "important"
+    },
+    {
+      "from": "cellfs",
+      "to": "fuse_driver",
+      "relation": "may_expose",
+      "weight": 0.6,
+      "class": "supporting"
+    },
+    {
+      "from": "cybernetic_engram",
+      "to": "filesystem_behavior",
+      "relation": "analyzes",
+      "weight": 0.95,
+      "class": "core"
+    },
+    {
+      "from": "cybernetic_engram",
+      "to": "behavioral_detection",
+      "relation": "supports",
+      "weight": 0.9,
+      "class": "important"
+    },
+    {
+      "from": "cybernetic_engram",
+      "to": "autonomous_recovery",
+      "relation": "supports",
+      "weight": 0.9,
+      "class": "important"
+    },
+    {
+      "from": "cybernetic_engram",
+      "to": "malicious_activity_interpretation",
+      "relation": "supports",
+      "weight": 0.85,
+      "class": "important"
+    },
+    {
+      "from": "control_plane",
+      "to": "resiliate",
+      "relation": "manages_components_of",
+      "weight": 0.85,
+      "class": "important"
+    },
+    {
+      "from": "control_plane",
+      "to": "operational_interface",
+      "relation": "unifies",
+      "weight": 0.8,
+      "class": "important"
+    },
+    {
+      "from": "control_plane",
+      "to": "control_plane_ui",
+      "relation": "connects_to",
+      "weight": 0.7,
+      "class": "supporting"
+    },
+    {
+      "from": "plugin_architecture",
+      "to": "extensibility",
+      "relation": "enables",
+      "weight": 0.85,
+      "class": "important"
+    },
+    {
+      "from": "plugin_architecture",
+      "to": "multi_filesystem_support",
+      "relation": "enables",
+      "weight": 0.8,
+      "class": "important"
+    },
+    {
+      "from": "plugin_architecture",
+      "to": "resiliate",
+      "relation": "belongs_to",
+      "weight": 0.85,
+      "class": "important"
+    },
+    {
+      "from": "denis_krusos",
+      "to": "saf_ai",
+      "relation": "investor_in",
+      "weight": 0.95,
+      "class": "core"
+    },
+    {
+      "from": "denis_krusos",
+      "to": "cap_table",
+      "relation": "stakeholder_in",
+      "weight": 0.9,
+      "class": "important"
+    },
+    {
+      "from": "denis_krusos",
+      "to": "safe_financing",
+      "relation": "participates_in",
+      "weight": 0.9,
+      "class": "important"
+    },
+    {
+      "from": "denis_krusos",
+      "to": "valuation_growth",
+      "relation": "interested_in",
+      "weight": 0.75,
+      "class": "important"
+    },
+    {
+      "from": "denis_krusos",
+      "to": "liquidity_event",
+      "relation": "interested_in",
+      "weight": 0.7,
+      "class": "supporting"
+    },
+    {
+      "from": "peri_krusos",
+      "to": "saf_ai",
+      "relation": "investor_in",
+      "weight": 0.9,
+      "class": "important"
+    },
+    {
+      "from": "peri_krusos",
+      "to": "cap_table",
+      "relation": "stakeholder_in",
+      "weight": 0.85,
+      "class": "important"
+    },
+    {
+      "from": "peri_krusos",
+      "to": "safe_financing",
+      "relation": "participates_in",
+      "weight": 0.85,
+      "class": "important"
+    },
+    {
+      "from": "safe_financing",
+      "to": "saf_ai",
+      "relation": "funds",
+      "weight": 0.95,
+      "class": "core"
+    },
+    {
+      "from": "safe_financing",
+      "to": "future_priced_round",
+      "relation": "converts_in",
+      "weight": 0.9,
+      "class": "important"
+    },
+    {
+      "from": "safe_financing",
+      "to": "cap_table",
+      "relation": "affects",
+      "weight": 0.95,
+      "class": "core"
+    },
+    {
+      "from": "safe_financing",
+      "to": "future_priced_round",
+      "relation": "delays_direct_equity_pricing_until",
+      "weight": 0.85,
+      "class": "important"
+    },
+    {
+      "from": "cap_table",
+      "to": "shareholder_structure",
+      "relation": "reflects",
+      "weight": 0.95,
+      "class": "core"
+    },
+    {
+      "from": "cap_table",
+      "to": "founder_stake",
+      "relation": "includes",
+      "weight": 0.95,
+      "class": "core"
+    },
+    {
+      "from": "cap_table",
+      "to": "investor_interests",
+      "relation": "includes",
+      "weight": 0.95,
+      "class": "core"
+    },
+    {
+      "from": "cap_table",
+      "to": "safe_conversion",
+      "relation": "changes_after",
+      "weight": 0.9,
+      "class": "important"
+    },
+    {
+      "from": "ahmed_masud",
+      "to": "technical_direction",
+      "relation": "controls",
+      "weight": 1.0,
+      "class": "core"
+    },
+    {
+      "from": "ahmed_masud",
+      "to": "ip_strategy",
+      "relation": "influences",
+      "weight": 0.95,
+      "class": "core"
+    },
+    {
+      "from": "ahmed_masud",
+      "to": "ceo_role",
+      "relation": "may_transition_from",
+      "weight": 0.55,
+      "class": "supporting"
+    },
+    {
+      "from": "ahmed_masud",
+      "to": "cto_role",
+      "relation": "may_transition_to",
+      "weight": 0.6,
+      "class": "supporting"
+    },
+    {
+      "from": "investors",
+      "to": "safe_financing",
+      "relation": "provide_capital_through",
+      "weight": 0.95,
+      "class": "core"
+    },
+    {
+      "from": "investors",
+      "to": "financing_strategy",
+      "relation": "influence",
+      "weight": 0.9,
+      "class": "important"
+    },
+    {
+      "from": "investors",
+      "to": "exit_timing",
+      "relation": "influence",
+      "weight": 0.8,
+      "class": "important"
+    },
+    {
+      "from": "investors",
+      "to": "core_engineering_decisions",
+      "relation": "do_not_normally_control",
+      "weight": 0.85,
+      "class": "important"
+    },
+    {
+      "from": "david",
+      "to": "saf_ai",
+      "relation": "participates_in_executive_discussions_with",
+      "weight": 0.75,
+      "class": "important"
+    },
+    {
+      "from": "david",
+      "to": "business_leadership",
+      "relation": "may_support",
+      "weight": 0.65,
+      "class": "supporting"
+    },
+    {
+      "from": "david",
+      "to": "commercialization_and_operations",
+      "relation": "connects_to",
+      "weight": 0.7,
+      "class": "supporting"
+    },
+    {
+      "from": "ling",
+      "to": "company_operations",
+      "relation": "participates_in",
+      "weight": 0.7,
+      "class": "supporting"
+    },
+    {
+      "from": "ling",
+      "to": "ahmed_masud",
+      "relation": "collaborates_with",
+      "weight": 0.75,
+      "class": "important"
+    },
+    {
+      "from": "jeffrey_salomon",
+      "to": "saf_ai",
+      "relation": "attorney_for",
+      "weight": 0.95,
+      "class": "core"
+    },
+    {
+      "from": "jeffrey_salomon",
+      "to": "marbury_law_group",
+      "relation": "associated_with",
+      "weight": 0.95,
+      "class": "core"
+    },
+    {
+      "from": "marbury_law_group",
+      "to": "patent_prosecution",
+      "relation": "manages",
+      "weight": 0.9,
+      "class": "important"
+    },
+    {
+      "from": "marbury_law_group",
+      "to": "maintenance_fee_communications",
+      "relation": "manages",
+      "weight": 0.9,
+      "class": "important"
+    },
+    {
+      "from": "patent_portfolio",
+      "to": "us12045224b2",
+      "relation": "includes",
+      "weight": 0.95,
+      "class": "core"
+    },
+    {
+      "from": "patent_portfolio",
+      "to": "canadian_patent_application",
+      "relation": "includes",
+      "weight": 0.95,
+      "class": "core"
+    },
+    {
+      "from": "patent_portfolio",
+      "to": "european_patent_application",
+      "relation": "includes",
+      "weight": 0.9,
+      "class": "important"
+    },
+    {
+      "from": "patent_portfolio",
+      "to": "japanese_patent_rights",
+      "relation": "includes",
+      "weight": 0.85,
+      "class": "important"
+    },
+    {
+      "from": "cipo",
+      "to": "canadian_patent_application",
+      "relation": "examines",
+      "weight": 0.9,
+      "class": "important"
+    },
+    {
+      "from": "cynthia",
+      "to": "canadian_patent_application",
+      "relation": "associated_with_examination_of",
+      "weight": 0.75,
+      "class": "important"
+    },
+    {
+      "from": "ahmed_masud",
+      "to": "patent_portfolio",
+      "relation": "associated_with_inventorship_of",
+      "weight": 1.0,
+      "class": "core"
+    },
+    {
+      "from": "patent_portfolio",
+      "to": "strategic_acquisition_narrative",
+      "relation": "strengthens",
+      "weight": 0.8,
+      "class": "important"
+    },
+    {
+      "from": "patent_portfolio",
+      "to": "investor_positioning",
+      "relation": "strengthens",
+      "weight": 0.8,
+      "class": "important"
+    },
+    {
+      "from": "patent_portfolio",
+      "to": "competitive_defensibility",
+      "relation": "strengthens",
+      "weight": 0.9,
+      "class": "important"
+    },
+    {
+      "from": "resiliate",
+      "to": "gcp",
+      "relation": "developed_on",
+      "weight": 0.8,
+      "class": "important"
+    },
+    {
+      "from": "gcp",
+      "to": "development_environments",
+      "relation": "hosts",
+      "weight": 0.75,
+      "class": "important"
+    },
+    {
+      "from": "resiliate",
+      "to": "kernel_modules",
+      "relation": "includes_low_level_components",
+      "weight": 0.8,
+      "class": "important"
+    },
+    {
+      "from": "resiliate",
+      "to": "filesystem_logic",
+      "relation": "includes_low_level_components",
+      "weight": 0.9,
+      "class": "important"
+    },
+    {
+      "from": "resiliate",
+      "to": "fuse_driver",
+      "relation": "may_use",
+      "weight": 0.6,
+      "class": "supporting"
+    },
+    {
+      "from": "dkms_kernel_module",
+      "to": "cellfs",
+      "relation": "supports",
+      "weight": 0.8,
+      "class": "important"
+    },
+    {
+      "from": "resiliate",
+      "to": "defense_sector",
+      "relation": "relevant_to",
+      "weight": 0.7,
+      "class": "supporting"
+    },
+    {
+      "from": "resiliate",
+      "to": "oil_and_gas_sector",
+      "relation": "relevant_to",
+      "weight": 0.7,
+      "class": "supporting"
+    },
+    {
+      "from": "dod",
+      "to": "testing_interest",
+      "relation": "associated_with",
+      "weight": 0.6,
+      "class": "supporting"
+    },
+    {
+      "from": "saf_ai",
+      "to": "enterprise_prospects",
+      "relation": "engages_with",
+      "weight": 0.75,
+      "class": "important"
+    },
+    {
+      "from": "saf_ai",
+      "to": "strategic_enterprise_partnering",
+      "relation": "may_position_for",
+      "weight": 0.7,
+      "class": "supporting"
+    },
+    {
+      "from": "ibm",
+      "to": "saf_ai",
+      "relation": "example_of_strategic_partner_class_for",
+      "weight": 0.45,
+      "class": "tentative"
+    },
+    {
+      "from": "saf_ai",
+      "to": "strategic_acquisition",
+      "relation": "may_seek",
+      "weight": 0.6,
+      "class": "supporting"
+    },
+    {
+      "from": "strategic_acquisition",
+      "to": "technology_tuckin",
+      "relation": "may_take_form_of",
+      "weight": 0.6,
+      "class": "supporting"
+    },
+    {
+      "from": "technology_tuckin",
+      "to": "patent_portfolio",
+      "relation": "values",
+      "weight": 0.85,
+      "class": "important"
+    },
+    {
+      "from": "technology_tuckin",
+      "to": "founder_knowledge",
+      "relation": "values",
+      "weight": 0.9,
+      "class": "important"
+    },
+    {
+      "from": "technology_tuckin",
+      "to": "deep_technical_differentiation",
+      "relation": "values",
+      "weight": 0.9,
+      "class": "important"
+    }
+  ]
+}
